@@ -1,4 +1,4 @@
-﻿namespace Common
+﻿namespace SNR.Common
 {
     public interface IValidationHelper
     {
