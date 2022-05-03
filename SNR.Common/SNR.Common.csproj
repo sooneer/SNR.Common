@@ -6,8 +6,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
-    <PackageReference Include="SNR.Utilities" Version="1.0.2" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="SNR.Utilities" Version="1.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
@@ -30,7 +30,7 @@
 	  <RepositoryUrl>https://github.com/sooneer/SNR.Common</RepositoryUrl>
 	  <RepositoryType>git</RepositoryType>
 	  <PackageTags>SNR;Common</PackageTags>
-	  <Version>1.0.5</Version>
+	  <Version>1.0.7</Version>
   </PropertyGroup>
 
   <ItemGroup>
