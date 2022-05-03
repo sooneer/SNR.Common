@@ -1,9 +1,8 @@
-﻿namespace SNR.Common
-{
-    public interface IValidationHelper
-    {
-        void Get(int id);
+﻿namespace SNR.Common;
 
-        void Save<TModel>(TModel request);
-    }
+public interface IValidationHelper
+{
+    void Get(int id);
+
+    void Save<TModel>(TModel request);
 }

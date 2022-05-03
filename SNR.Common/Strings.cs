@@ -23,6 +23,11 @@ public struct Strings
         {
             public const string SqlConnection = "SqlConnection";
         }
+
+        public struct Parameter
+        {
+            public const string UploadPath = "UploadPath";
+        }
     }
 
     public struct DB
@@ -37,6 +42,8 @@ public struct Strings
         public struct Header
         {
             public const string Token = "Token";
+            public const string Locale = "Locale";
+            public const string CompanyCode = "CompanyCode";
         }
     }
 

@@ -181,8 +181,7 @@ public class Encrypter : IEncrypter
     {
         var str = Encoding.ASCII.GetString(Convert.FromBase64String(text));
         byte[] cipherBytes = Convert.FromBase64String(str);
-        PasswordDeriveBytes pdb = new PasswordDeriveBytes(_key,
-        new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
+        PasswordDeriveBytes pdb = new PasswordDeriveBytes(_key, _bytes);
         byte[] decryptedData = Decrypt(cipherBytes, pdb.GetBytes(32), pdb.GetBytes(16));
 
         return Encoding.Unicode.GetString(decryptedData);

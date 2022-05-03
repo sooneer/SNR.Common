@@ -1,7 +1,7 @@
 ﻿using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Common.Filter;
+namespace SNR.Common.Filter;
 
 public class AuthHeaderFilter : IOperationFilter
 {
