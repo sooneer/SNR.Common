@@ -30,7 +30,7 @@
 	  <RepositoryUrl>https://github.com/sooneer/SNR.Common</RepositoryUrl>
 	  <RepositoryType>git</RepositoryType>
 	  <PackageTags>SNR;Common</PackageTags>
-	  <Version>1.0.7</Version>
+	  <Version>1.0.8-beta3</Version>
   </PropertyGroup>
 
   <ItemGroup>

@@ -11,10 +11,12 @@ public class AuthHeaderFilter : IOperationFilter
         {
             operation.Parameters = new List<OpenApiParameter>();
         }
+
         if (context.MethodInfo.Name == "Token")
         {
             return;
         }
+
         operation.Parameters.Add(new OpenApiParameter
         {
             Name = "Token",

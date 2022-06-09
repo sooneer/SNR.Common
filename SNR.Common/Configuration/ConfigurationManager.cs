@@ -10,6 +10,12 @@ public class ConfigurationManager : IConfigurationManager
         var _file = File.ReadAllText(_settingPath);
         _configurationModel = JsonConvert.DeserializeObject<ConfigurationModel>(_file);
     }
+
+    public string Get(string key)
+    {
+        throw new NotImplementedException();
+    }
+
     public string GetConnectionString()
     {
         return _configurationModel.ConnectionStrings.SqlConnection;
