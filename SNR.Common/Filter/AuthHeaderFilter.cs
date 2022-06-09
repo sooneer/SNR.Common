@@ -7,14 +7,19 @@ public class AuthHeaderFilter : IOperationFilter
 {
     public void Apply(OpenApiOperation operation, OperationFilterContext context)
     {
+        var authAttributes = context.MethodInfo
+             .GetCustomAttributes(true)
+             .OfType<DisableAuthHeaderAttribute>()
+             .Distinct();
+
+        if (authAttributes.Any())
+        {
+            return;
+        }
+
         if (operation.Parameters == null)
         {
             operation.Parameters = new List<OpenApiParameter>();
-        }
-
-        if (context.MethodInfo.Name == "Token")
-        {
-            return;
         }
 
         operation.Parameters.Add(new OpenApiParameter
